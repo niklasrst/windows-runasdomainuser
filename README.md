@@ -24,6 +24,8 @@ Uninstall: `C:\Windows\SysNative\WindowsPowershell\v1.0\PowerShell.exe -Executio
 
 Detect (FILE): `"C:\ProgramData\RunAsDomainUser\runasdomainuser-exe.exe"`
 
+### Code Transparency
+I wanted the solution to be as simple and transparent as possible. So [runasdomainuser-exe.exe](/runasdomainuser-exe/bin/Release/net9.0/runasdomainuser-exe.exe) runs [runasdomainuser.ps1](/runasdomainuser.ps1) with [domain.txt](/domain.txt) and [app.txt](/app.txt) to simply control the tool. You can checkout [program.cs](/runasdomainuser-exe/Program.cs) to see whats inside of and/or what it does [runasdomainuser-exe.exe](/runasdomainuser-exe/bin/Release/net9.0/runasdomainuser-exe.exe). The [runasdomainuser-exe.exe](/runasdomainuser-exe/bin/Release/net9.0/runasdomainuser-exe.exe) is straight compiled from [program.cs](/runasdomainuser-exe/Program.cs). Later when installing the script using [INSTALL-RunAsDomainUser.ps1](/INSTALL-RunAsDomainUser.ps1) using Intune, it creates a Startmenu link in `$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Run As Domain User.lnk` pointing to [runasdomainuser-exe.exe](/runasdomainuser-exe/bin/Release/net9.0/runasdomainuser-exe.exe) at `C:\ProgramData\RunAsDomainUser\runasdomainuser-exe.exe`.
 
 
 ## How to use it?

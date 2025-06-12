@@ -28,11 +28,11 @@ Detect (FILE): `"C:\ProgramData\RunAsDomainUser\runasdomainuser-exe.exe"`
 
 ## How to use it?
 
-Once the app is installed on your Windows device(s) look in the Windows start menu for `Run As Domain User`:
+Once the app is installed on your Windows device(s) look in the Windows start menu for `Run As Domain User`:<br><br>
 ![runasdomainuser](./assets/1.png)
-
-When clicking on the app it launches a "UAC"-like prompt to authenticate with a user account that exists in the domain that you defined inside of `domain.txt`:
-![runasdomainuser](./assets/2.png)
+<br><br>
+When clicking on the app it launches a "UAC"-like prompt to authenticate with a user account that exists in the domain that you defined inside of `domain.txt`:<br><br>
+![runasdomainuser](./assets/2.png)<br><br>
 Authenticate using a full FQDN like `12345@company.domain.com` from the `Use a different account` selection.
 
 After successfully authenticated, the in `app.txt` defined executable should launch and run with the permissions from the defined user from active directory which lives in the domain that you defined in `domain.txt`.

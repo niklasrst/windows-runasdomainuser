@@ -2,6 +2,8 @@
 
 This app acts as a wrapper to run ShellRunas.exe with predefined parameters to execute cmd.exe invoked as an onprem account from the AD. It can help when you went Cloud-Only with you Windows devices but need to use legacy tools like the RSAT Tools to manage you onprem domain.
 
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/niklasrst/windows-runasdomainuser/total)
+
 ## Prerequisites
 
 ### Network
